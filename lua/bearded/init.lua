@@ -13,14 +13,14 @@ local set_terminal_colors = function()
   vim.g.terminal_color_5 = c.magenta
   vim.g.terminal_color_6 = c.cyan
   vim.g.terminal_color_7 = c.white
-  vim.g.terminal_color_8 = c.black
-  vim.g.terminal_color_9 = c.red
-  vim.g.terminal_color_10 = c.green
-  vim.g.terminal_color_11 = c.yellow
-  vim.g.terminal_color_12 = c.blue
-  vim.g.terminal_color_13 = c.magenta
-  vim.g.terminal_color_14 = c.cyan
-  vim.g.terminal_color_15 = c.white
+  vim.g.terminal_color_8 = c.bright_black
+  vim.g.terminal_color_9 = c.bright_red
+  vim.g.terminal_color_10 = c.bright_green
+  vim.g.terminal_color_11 = c.bright_yellow
+  vim.g.terminal_color_12 = c.bright_blue
+  vim.g.terminal_color_13 = c.bright_magenta
+  vim.g.terminal_color_14 = c.bright_cyan
+  vim.g.terminal_color_15 = c.bright_white
   vim.g.terminal_color_background = c.bg
   vim.g.terminal_color_foreground = c.fg
 end
@@ -33,7 +33,7 @@ local set_groups = function()
     Normal = { fg = c.fg, bg = cfg.transparent and c.none or c.bg }, -- normal text and background color
     NormalNC = { fg = c.fg, bg = cfg.transparent and c.none or c.bg }, -- normal text in non-current windows
     SignColumn = { fg = c.fg, bg = cfg.transparent and c.none or c.bg }, -- column where signs are displayed
-    EndOfBuffer = { fg = c.gray03 }, -- ~ lines at the end of a buffer
+    EndOfBuffer = { fg = c.gray02 }, -- ~ lines at the end of a buffer
     NormalFloat = { fg = c.fg, bg = c.gray02 }, -- normal text and background color for floating windows
     FloatBorder = { fg = c.blue, bg = c.gray02 },
     ColorColumn = { fg = c.none, bg = c.gray01 }, --  used for the columns set with 'colorcolumn'
@@ -49,12 +49,12 @@ local set_groups = function()
     Folded = { fg = c.gray05, bg = c.none, italic = true },
     FoldColumn = { fg = c.blue },
     IncSearch = { reverse = true },
-    LineNr = { fg = c.gray05 },
-    CursorLineNr = { fg = c.gray07 },
+    LineNr = { fg = c.lineNumFg },
+    CursorLineNr = { fg = c.lineNumActiveFg },
     MatchParen = { fg = c.yellow, bold = true },
-    ModeMsg = { fg = c.cyan, bold = true },
+    ModeMsg = { fg = c.fg, bold = true }, -- "-- Insert --" text at the bottom
     MoreMsg = { fg = c.cyan, bold = true },
-    NonText = { fg = c.gray03 },
+    NonText = { fg = c.whitespaceFg },  -- Whitespace
     Pmenu = { fg = c.gray07, bg = c.gray02 },
     PmenuSel = { fg = c.bg, bg = c.gray06 },
     PmenuSbar = { fg = c.fg, bg = c.gray02 },
@@ -68,7 +68,7 @@ local set_groups = function()
     SpellCap = { fg = c.blue, bg = c.none, italic = true, undercurl = true },
     SpellLocal = { fg = c.cyan, bg = c.none, italic = true, undercurl = true },
     SpellRare = { fg = c.cyan, bg = c.none, italic = true, undercurl = true },
-    StatusLine = { fg = c.gray07, bg = c.gray01 },
+    StatusLine = { fg = c.statusbarFg, bg = c.statusbarBg },
     StatusLineNC = { fg = c.gray06, bg = c.gray01 },
     StatusLineTerm = { fg = c.gray07, bg = c.gray01 },
     StatusLineTermNC = { fg = c.gray07, bg = c.gray01 },
@@ -76,24 +76,24 @@ local set_groups = function()
     TablineSel = { fg = c.bg, bg = c.gray07 },
     Tabline = { fg = c.gray05 },
     Title = { fg = c.cyan, bg = c.none, bold = true },
-    Visual = { fg = c.none, bg = c.gray03 },
+    Visual = { fg = c.none, bg = c.selectionBg }, -- visual selection color
     VisualNOS = { fg = c.none, bg = c.gray03 },
     WarningMsg = { fg = c.yellow, bold = true },
     WildMenu = { fg = c.bg, bg = c.blue, bold = true },
-    CursorColumn = { fg = c.none, bg = c.gray02 },
-    CursorLine = { fg = c.none, bg = c.gray01 },
+    CursorColumn = { fg = c.none, bg = c.lineHighlightBg }, -- column highlight color
+    CursorLine = { fg = c.none, bg = c.lineHighlightBg }, -- line highlight color
     ToolbarLine = { fg = c.fg, bg = c.gray01 },
     ToolbarButton = { fg = c.fg, bg = c.none, bold = true },
-    NormalMode = { fg = c.gray02, bg = c.none, reverse = true },
-    InsertMode = { fg = c.green, bg = c.none, reverse = true },
-    VisualMode = { fg = c.cyan, bg = c.none, reverse = true },
+    NormalMode = { fg = c.normalMode, bg = c.red, reverse = true },
+    InsertMode = { fg = c.insertMode, bg = c.none, reverse = true },
+    VisualMode = { fg = c.visualMode, bg = c.none, reverse = true },
     VertSplit = { fg = c.gray02 },
     CommandMode = { fg = c.gray05, bg = c.none, reverse = true },
     Warnings = { fg = c.yellow },
     healthError = { fg = c.red },
     healthSuccess = { fg = c.green },
     healthWarning = { fg = c.yellow },
-    --common
+   --common
     Type = { fg = c.magenta }, -- int, long, char, etc.
     StorageClass = { fg = c.cyan }, -- static, register, volatile, etc.
     Structure = { fg = c.fg }, -- struct, union, enum, etc.
@@ -381,8 +381,8 @@ local set_groups = function()
     Sneak = { fg = c.bg, bg = c.green },
     SneakScope = { bg = c.gray04 },
     -- Indent Blankline
-    IndentBlanklineChar = { fg = c.gray03 },
-    IndentBlanklineContextChar = { fg = c.gray05 },
+    IndentBlanklineChar = { fg = c.indentGuideBg },
+    IndentBlanklineContextChar = { fg = c.indentGuideActiveBg },
     -- nvim-cmp
     CmpItemAbbrDeprecated = { fg = c.gray05, strikethrough = true },
     CmpItemAbbrMatch = { fg = c.yellow },

@@ -7,10 +7,10 @@ BeardedBear's [bearded-theme](https://github.com/BeardedBear/bearded-theme), now
 
 <!-- Add screenshot !!!!!!!!!!fdsafljdaks -->
 
-> [!NOTE]
+## Credits
 > Special thanks to [rasmus.nvim](https://github.com/kvrohit/rasmus.nvim) as a lot of code is from there!
 
-# Contributing
+## Contributing
 Any help with adding the 32+ variations from the original Bearded-theme is appreciated!
 
 <!-- Organise into list -->
@@ -72,8 +72,19 @@ Any help with adding the 32+ variations from the original Bearded-theme is appre
 - [ ] bearded-theme Monokai Black 
 - [ ] bearded-theme Monokai Metallian 
 - [ ] bearded-theme Monokai Reversed 
-- [ ] bearded-theme Monokai Stone 
-- [ ] bearded-theme Stained Blue 
+- [ ] bearded-theme Monokai Stone
+- [ ] bearded-theme-monokai-terra 
+- [ ] bearded-theme Oceanic-reversed 
+- [ ] bearded-theme Oceanic 
+- [ ] bearded-theme Solarized Dark 
+- [ ] bearded-theme Solarized Light 
+- [ ] bearded-theme Solarized Reversed 
+- [ ] bearded-theme Stained Blue
 - [ ] bearded-theme Stained Purple 
 - [ ] bearded-theme Surprising Blueberry 
+- [ ] bearded-theme Surprising Eggplant 
+- [ ] bearded-theme Surprising Watermelon 
+- [ ] bearded-theme Vivid Black 
+- [ ] bearded-theme Vivid Light 
+- [ ] bearded-theme Vivid Purple 
 - [ ] bearded-theme Void 
