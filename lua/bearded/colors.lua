@@ -44,18 +44,18 @@ M.vividdark = {
 
     whitespaceFg = "#2b2b30",
 
-    normalMode = "#42424a",
+    normalMode = "#ff0000", -- "#42424a",
     visualMode = blue,
     insertMode = green,
 
     statusbarBg = "#0f0f11",
     statusbarFg = "#5f5f65",
     
-    gray01 = "#0f0f11", -- #222221
-    gray02 = "#42424a", -- #2a2a29
+    gray01 = "#0f0f11",
+    gray02 = "#42424a",
     -- gray03 = "#323231", -- #323231
-    gray04 = "#50505a", -- #3a3a39
-    gray05 = "#555555", -- #6a6a69
+    gray04 = "#50505a",
+    gray05 = "#555555",
     -- gray06 = "#767675", -- #767675
     -- gray07 = "#b6b6b5", -- #b6b6b5
 

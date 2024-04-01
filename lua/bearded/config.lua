@@ -17,13 +17,14 @@ local function style(italic, bold)
 end
 
 M.config = {
-  transparent = opt("transparent", false),
-  comment_style = style(opt("italic_comments", true), opt("bold_comments", false)),
-  keyword_style = style(opt("italic_keywords", false), opt("bold_keywords", false)),
-  boolean_style = style(opt("italic_booleans", false), opt("bold_booleans", false)),
-  function_style = style(opt("italic_functions", false), opt("bold_functions", false)),
-  variable_style = style(opt("italic_variables", false), opt("bold_variables", false)),
-  variant = opt("variant", "vividdark"),
+    transparent = opt("transparent", false),
+    comment_style = style(opt("italic_comments", true), opt("bold_comments", false)),
+    keyword_style = style(opt("italic_keywords", false), opt("bold_keywords", false)),
+    boolean_style = style(opt("italic_booleans", false), opt("bold_booleans", false)),
+    function_style = style(opt("italic_functions", false), opt("bold_functions", false)),
+    variable_style = style(opt("italic_variables", false), opt("bold_variables", false)),
+    -- add options for nvim folder icon color
+    variant = opt("variant", "vividdark"),
 }
 
 return M

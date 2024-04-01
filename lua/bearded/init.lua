@@ -77,14 +77,14 @@ local set_groups = function()
     Tabline = { fg = c.gray05 },
     Title = { fg = c.cyan, bg = c.none, bold = true },
     Visual = { fg = c.none, bg = c.selectionBg }, -- visual selection color
-    VisualNOS = { fg = c.none, bg = c.gray03 },
+    VisualNOS = { fg = c.none, bg = c.selectionBg },  -- According to a github issue, this is deprecated
     WarningMsg = { fg = c.yellow, bold = true },
     WildMenu = { fg = c.bg, bg = c.blue, bold = true },
     CursorColumn = { fg = c.none, bg = c.lineHighlightBg }, -- column highlight color
     CursorLine = { fg = c.none, bg = c.lineHighlightBg }, -- line highlight color
     ToolbarLine = { fg = c.fg, bg = c.gray01 },
     ToolbarButton = { fg = c.fg, bg = c.none, bold = true },
-    NormalMode = { fg = c.normalMode, bg = c.red, reverse = true },
+    NormalMode = { fg = c.normalMode, bg = c.none, reverse = true },
     InsertMode = { fg = c.insertMode, bg = c.none, reverse = true },
     VisualMode = { fg = c.visualMode, bg = c.none, reverse = true },
     VertSplit = { fg = c.gray02 },
@@ -297,25 +297,33 @@ local set_groups = function()
     GitSignsDeleteNr = { fg = c.red }, -- diff mode: Deleted line |diff.txt|
     GitSignsDeleteLn = { fg = c.red }, -- diff mode: Deleted line |diff.txt|
     -- Telescope
-    TelescopeSelectionCaret = { fg = c.blue, bg = c.gray01 },
+    TelescopeSelectionCaret = { fg = c.none, bg = c.gray02 },
     TelescopeBorder = { fg = c.gray02 },
     TelescopePromptBorder = { fg = c.blue },
     TelescopeResultsBorder = { fg = c.gray02 },
     TelescopePreviewBorder = { fg = c.gray02 },
     TelescopeMatching = { fg = c.yellow },
     TelescopePromptPrefix = { fg = c.blue },
-    -- NvimTree
-    NvimTreeRootFolder = { fg = c.cyan, italic = true },
+    -- NvimTree              https://github.com/nvim-tree/nvim-tree.lua/blob/master/lua/nvim-tree/appearance/init.lua
     NvimTreeNormal = { fg = c.fg, bg = cfg.transparent and c.none or c.bg },
-    NvimTreeImageFile = { fg = c.magenta },
+    NvimTreeIndentMarker = { fg = c.gray03 },
+
+    NvimTreeImageFile = { fg = c.white },
     NvimTreeExecFile = { fg = c.green },
     NvimTreeSpecialFile = { fg = c.magenta },
-    NvimTreeFolderName = { fg = c.blue },
-    NvimTreeOpenedFolderName = { fg = c.blue },
     NvimTreeOpenedFile = { fg = c.blue },
-    NvimTreeEmptyFolderName = { fg = c.gray05 },
-    NvimTreeFolderIcon = { fg = c.gray07 },
-    NvimTreeIndentMarker = { fg = c.gray03 },
+
+    NvimTreeFolderName = { fg = c.white },
+    NvimTreeRootFolder = { fg = c.white, bold = true },
+    NvimTreeEmptyFolderName = { fg = c.gray02 },
+
+    NvimTreeFolderIcon = { fg = c.blue }, -- make this customizable
+    NvimTreeOpenedFolderName = { fg = c.white, bold = true },
+    -- NvimTreeOpenedFolderIcon = { fg = c.blue },
+
+    NvimTreeCutHL = { fg = c.red },
+    NvimTreeCopiedHL = { fg = c.green },
+
     NvimTreeGitDirty = { fg = c.gray07 },
     NvimTreeGitStaged = { fg = c.cyan },
     NvimTreeGitRenamed = { fg = c.yellow },
@@ -375,10 +383,10 @@ local set_groups = function()
     LspSagaDiagnosticHeader = { fg = c.gray07 },
     LspSagaDiagnosticTruncateLine = { fg = c.gray05 },
     -- BufferLine
-    BufferLineIndicatorSelected = { fg = c.green },
-    BufferLineFill = { bg = c.gray03 },
+    BufferLineIndicatorSelected = { fg = c.yellow },
+    BufferLineFill = { bg = c.statusbarBg },
     -- Sneak
-    Sneak = { fg = c.bg, bg = c.green },
+    Sneak = { fg = c.bg, bg = c.blue },
     SneakScope = { bg = c.gray04 },
     -- Indent Blankline
     IndentBlanklineChar = { fg = c.indentGuideBg },
