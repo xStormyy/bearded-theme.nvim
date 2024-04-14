@@ -34,8 +34,8 @@ local set_groups = function()
     NormalNC = { fg = c.fg, bg = cfg.transparent and c.none or c.bg }, -- normal text in non-current windows
     SignColumn = { fg = c.fg, bg = cfg.transparent and c.none or c.bg }, -- column where signs are displayed
     EndOfBuffer = { fg = c.gray02 }, -- ~ lines at the end of a buffer
-    NormalFloat = { fg = c.fg, bg = c.gray02 }, -- normal text and background color for floating windows
-    FloatBorder = { fg = c.blue, bg = c.gray02 },
+    NormalFloat = { fg = c.fg, bg = c.statusbarBg }, -- normal text and background color for floating windows
+    FloatBorder = { fg = c.blue, bg = c.statusbarBg },
     ColorColumn = { fg = c.none, bg = c.gray01 }, --  used for the columns set with 'colorcolumn'
     Conceal = { fg = c.gray05 }, -- placeholder characters substituted for concealed text (see 'conceallevel')
     Cursor = { fg = c.cyan, bg = c.none, reverse = true }, -- the character under the cursor
@@ -55,9 +55,9 @@ local set_groups = function()
     ModeMsg = { fg = c.fg, bold = true }, -- "-- Insert --" text at the bottom
     MoreMsg = { fg = c.cyan, bold = true },
     NonText = { fg = c.whitespaceFg },  -- Whitespace
-    Pmenu = { fg = c.gray07, bg = c.gray02 },
+    Pmenu = { fg = c.gray07, bg = c.statusbarBg },
     PmenuSel = { fg = c.bg, bg = c.gray06 },
-    PmenuSbar = { fg = c.fg, bg = c.gray02 },
+    PmenuSbar = { fg = c.fg, bg = c.statusbarBg },
     PmenuThumb = { fg = c.fg, bg = c.gray05 },
     Question = { fg = c.green, bold = true },
     QuickFixLine = { fg = c.blue, bg = c.gray01, bold = true, italic = true },
@@ -84,10 +84,10 @@ local set_groups = function()
     CursorLine = { fg = c.none, bg = c.lineHighlightBg }, -- line highlight color
     ToolbarLine = { fg = c.fg, bg = c.gray01 },
     ToolbarButton = { fg = c.fg, bg = c.none, bold = true },
-    NormalMode = { fg = c.normalMode, bg = c.none, reverse = true },
+    NormalMode = { fg = c.normalMode, bg = c.white, reverse = true },
     InsertMode = { fg = c.insertMode, bg = c.none, reverse = true },
     VisualMode = { fg = c.visualMode, bg = c.none, reverse = true },
-    VertSplit = { fg = c.gray02 },
+    VertSplit = { fg = c.gray02 }, -- line between two split buffers
     CommandMode = { fg = c.gray05, bg = c.none, reverse = true },
     Warnings = { fg = c.yellow },
     healthError = { fg = c.red },
@@ -361,7 +361,7 @@ local set_groups = function()
     ProviderTruncateLine = { fg = c.gray05 },
     SagaShadow = { fg = c.gray05 },
     DiagnosticTruncateLine = { fg = c.gray05 },
-    DiagnosticWarning = { fg = c.yellow },
+    DiagnosticWarning = { fg = c.red },
     DiagnosticInformation = { fg = c.blue },
     DefinitionPreviewTitle = { fg = c.gray07 },
     LspSagaShTruncateLine = { fg = c.gray05 },
@@ -404,9 +404,9 @@ local set_groups = function()
     CmpItemKindProperty = { fg = c.fg },
     CmpItemKindUnit = { fg = c.fg },
     -- mini.nvim
-    MiniStatuslineModeNormal = { fg = c.bg, bg = c.cyan },
-    MiniStatuslineModeInsert = { fg = c.bg, bg = c.blue },
-    MiniStatuslineModeVisual = { fg = c.bg, bg = c.magenta },
+    MiniStatuslineModeNormal = { fg = c.bg, bg = c.normalMode },
+    MiniStatuslineModeInsert = { fg = c.bg, bg = c.insertMode },
+    MiniStatuslineModeVisual = { fg = c.bg, bg = c.visualMode },
     MiniStatuslineModeReplace = { fg = c.bg, bg = c.yellow },
     MiniStatuslineModeCommand = { fg = c.bg, bg = c.green },
     MiniStatuslineModeOther = { fg = c.gray05, bg = c.gray01 },
@@ -441,8 +441,8 @@ local set_groups = function()
     StatusLineVisualMode = { fg = c.black, bg = c.gray04 },
     StatusLineReplaceMode = { fg = c.black, bg = c.gray05 },
     StatusLineTerminalMode = { fg = c.black, bg = c.gray05 },
-    StatusLineHint = { fg = c.cyan, bg = c.gray01 },
-    StatusLineInfo = { fg = c.blue, bg = c.gray01 },
+    StatusLineHint = { fg = c.blue, bg = c.gray01 },
+    StatusLineInfo = { fg = c.green, bg = c.gray01 },
     StatusLineWarn = { fg = c.yellow, bg = c.gray01 },
     StatusLineError = { fg = c.red, bg = c.gray01 },
     -- Hydra
