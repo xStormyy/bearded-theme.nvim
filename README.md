@@ -3,19 +3,15 @@
 > [!WARNING]
 > This theme is still currently in development!
 
-BeardedBear's [bearded-theme](https://github.com/BeardedBear/bearded-theme), now in a Neovim near you!
-
-<!-- Add screenshot !!!!!!!!!!fdsafljdaks -->
+BeardedBear's [Bearded-Theme](https://github.com/BeardedBear/bearded-theme), now in Neovim!
 
 ## Credits
-> Special thanks to [rasmus.nvim](https://github.com/kvrohit/rasmus.nvim) as a lot of code is from there!
+Special thanks to [rasmus.nvim](https://github.com/kvrohit/rasmus.nvim) as a lot of code is from there!
 
 ## Contributing
-Any help with adding the 32+ variations from the original Bearded-theme is appreciated!
+Any help with adding the 32+ variations from the original Bearded-Theme is always appreciated!
 
-<!-- Organise into list -->
-
-<!-- ☐ ✅ -->
+<!-- ☐ = Unfinished,  ✅ = Finished -->
 | Theme | Variants |
 |--|--|
 | Vivid | ✅ Dark<br>☐ Light<br>☐ Purple |
