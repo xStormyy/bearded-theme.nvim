@@ -15,76 +15,27 @@ Any help with adding the 32+ variations from the original Bearded-theme is appre
 
 <!-- Organise into list -->
 
-- [ ] bearded-theme Themanopia
-- [ ] bearded-theme Altica
-- [ ] bearded-theme Aquarelle Cymbidium
-- [ ] bearded-theme Aquarelle Hydrangea
-- [ ] bearded-theme Aquarelle Lilac
-- [ ] bearded-theme Aquerelle Hydrangea
-- [ ] bearded-theme Arc Blueberry
-- [ ] bearded-theme Arc Eggplant
-- [ ] bearded-theme Arc Eolstorm
-- [ ] bearded-theme Arc Reversed
-- [ ] bearded-theme Arc
-- [ ] bearded-theme Black & Amethyst Soft
-- [ ] bearded-theme Black & Amethyst
-- [ ] bearded-theme Black & Diamond Soft
-- [ ] bearded-theme Black & Diamond 
-- [ ] bearded-theme Black & Emerald Soft 
-- [ ] bearded-theme Black & Emerald 
-- [ ] bearded-theme Black & Gold Soft 
-- [ ] bearded-theme Black & Gold 
-- [ ] bearded-theme Black & Ruby Soft 
-- [ ] bearded-theme Black & Ruby 
-- [ ] bearded-theme Black Amethyst Soft 
-- [ ] bearded-theme Black Amethyst 
-- [ ] bearded-theme Black Diamond Soft 
-- [ ] bearded-theme Black Diamond 
-- [ ] bearded-theme Black Emerald Soft 
-- [ ] bearded-theme Black Emerald 
-- [ ] bearded-theme Black Gold Soft 
-- [ ] bearded-theme Black Gold 
-- [ ] bearded-theme Black Ruby Soft 
-- [ ] bearded-theme Black Ruby 
-- [ ] bearded-theme Classics Anthracite 
-- [ ] bearded-theme Classics Light 
-- [ ] bearded-theme Coffee Cream 
-- [ ] bearded-theme Coffee Reversed 
-- [ ] bearded-theme Coffee 
-- [ ] bearded-theme Earth 
-- [ ] bearded-theme Feat Gold D Raynh Light 
-- [ ] bearded-theme Feat Gold D Raynh 
-- [ ] bearded-theme Feat Mellejulie Light 
-- [ ] bearded-theme Feat Mellejulie 
-- [ ] bearded-theme Feat Will 
-- [ ] bearded-theme hc Brewing Storm 
-- [ ] bearded-theme hc Chocolate Espresso 
-- [ ] bearded-theme hc Ebony 
-- [ ] bearded-theme hc Flurry 
-- [ ] bearded-theme hc Midnightvoid 
-- [ ] bearded-theme hc Minuit 
-- [ ] bearded-theme hc Wonderland Wood 
-- [ ] bearded-theme Milkshake Blueberry 
-- [ ] bearded-theme Milkshake Mango 
-- [ ] bearded-theme Milkshake Mint 
-- [ ] bearded-theme Milkshake Raspberry 
-- [ ] bearded-theme Milkshake Vanilla 
-- [ ] bearded-theme Monokai Black 
-- [ ] bearded-theme Monokai Metallian 
-- [ ] bearded-theme Monokai Reversed 
-- [ ] bearded-theme Monokai Stone
-- [ ] bearded-theme-monokai-terra 
-- [ ] bearded-theme Oceanic-reversed 
-- [ ] bearded-theme Oceanic 
-- [ ] bearded-theme Solarized Dark 
-- [ ] bearded-theme Solarized Light 
-- [ ] bearded-theme Solarized Reversed 
-- [ ] bearded-theme Stained Blue
-- [ ] bearded-theme Stained Purple 
-- [ ] bearded-theme Surprising Blueberry 
-- [ ] bearded-theme Surprising Eggplant 
-- [ ] bearded-theme Surprising Watermelon 
-- [ ] bearded-theme Vivid Black 
-- [ ] bearded-theme Vivid Light 
-- [ ] bearded-theme Vivid Purple 
-- [ ] bearded-theme Void 
+<!-- ☐ ✅ -->
+| Theme | Variants |
+|--|--|
+| Vivid | ✅ Dark<br>☐ Light<br>☐ Purple |
+| Surprising | ☐ Blueberry<br>☐ Eggplant<br>☐ Watermelon |
+| Stained | ☐ Blue<br>☐ Purple |
+| Solarized | ☐ Dark<br>☐ Light<br>☐ Reversed |
+| Oceanic | ☐ Normal<br>☐ Reversed |
+| Void | ☐ Normal<br> |
+| Monokai | ☐ Black<br>☐ Metallian<br>☐ Reversed<br>☐ Stone<br>☐ Terra |
+| Milkshake | ☐ Vanilla<br>☐ Raspberry<br>☐ Mint<br>☐ Mango<br>☐ Blueberry |
+| HC | ☐ Ebony<br>☐ Flurry<br>☐ Brewing Storm<br>☐ Chocolate Espresso<br>☐ Midnightvoid<br>☐ Minuit<br>☐ Wonderland Wood |
+| Feat Will | ☐ Normal<br> |
+| Feat Gold D Raynh | ☐ Normal<br>☐ Light |
+| Feat Mellejulie | ☐ Normal<br>☐ Light |
+| Earth | ☐ Normal |
+| Coffee | ☐ Normal<br>☐ Cream<br>☐ Reversed |
+| Classics | ☐ Light<br>☐ Anthracite |
+| Black | ☐ Emerald<br>☐ Emerald Soft<br>☐ Gold<br>☐ Gold Soft<br>☐ Ruby<br>☐ Ruby Soft<br>☐ Diamond<br>☐ Diamond Soft<br>☐ Amethyst<br>☐ Amethyst Soft |
+| Black & | ☐ Gold<br>☐ Gold Soft<br>☐ Ruby<br>☐ Ruby Soft<br>☐ Emerald<br>☐ Emerald Soft<br>☐ Diamond<br>☐ Diamond Soft<br>☐ Amethyst<br>☐ Amethyst Soft |
+| Arc | ☐ Normal<br>☐ Blueberry<br>☐ Eggplant<br>☐ Eolstorm<br>☐ Reversed |
+| Aquarelle | ☐ Cymbidium<br>☐ Hydrangea<br>☐ Lilac |
+| Themanopia | ☐ Normal |
+| Altica | ☐ Normal |
