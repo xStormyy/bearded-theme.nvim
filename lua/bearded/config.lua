@@ -24,7 +24,7 @@ M.config = {
     function_style = style(opt("italic_functions", false), opt("bold_functions", false)),
     variable_style = style(opt("italic_variables", false), opt("bold_variables", false)),
     -- add options for nvim folder icon color
-    variant = opt("variant", "vividdark"),
+    variant = opt("variant", "vividblack"),
 }
 
 return M
