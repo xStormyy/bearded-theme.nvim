@@ -40,8 +40,7 @@ M.vividblack = {
     lineHighlightBg = "#1d1d20",    -- editor.lineHighlightBackground (rrggbbaa -> hex, see above)
 
     indentGuideActiveBg = "#44444d", -- editorIndentGuide.activeBackground1 (rrggbbaa -> hex, see above)
-
-    indentGuideBg = "#202024",       -- editorIndentGuide.Background1 (rrggbbaa -> hex, see above)
+    indentGuideBg = "#0f0f11",       -- editorIndentGuide.Background1 (rrggbbaa -> hex, see above) #202024
 
     lineNumActiveFg = "#929293",    -- editorLineNumber.activeForeground
     lineNumFg = "#373741",          -- editorLineNumber.foreground
@@ -98,8 +97,7 @@ M.vividlight = {
     lineHighlightBg = "#ededed",    -- editor.lineHighlightBackground (rrggbbaa -> hex, see above)
 
     indentGuideActiveBg = "#9f9f9f", -- editorIndentGuide.activeBackground1 (rrggbbaa -> hex, see above)
-
-    indentGuideBg = "#dfdfdf",       -- editorIndentGuide.Background1 (rrggbbaa -> hex, see above)
+    indentGuideBg = "#ebebeb",       -- editorIndentGuide.Background1 (rrggbbaa -> hex, see above) dfdfdf
 
     lineNumActiveFg = "#424242",    -- editorLineNumber.activeForeground
     lineNumFg = "#b3bab6",          -- editorLineNumber.foreground
