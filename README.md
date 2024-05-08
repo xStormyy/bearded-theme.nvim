@@ -11,6 +11,8 @@ Special thanks to [rasmus.nvim](https://github.com/kvrohit/rasmus.nvim) as a lot
 ## Contributing
 Any help with adding the 32+ variations from the original Bearded-Theme is always appreciated!
 
+You can also suggest colors in [issues](https://github.com/xStormyy/bearded-theme.nvim/issues).
+
 <!-- ☐ = Unfinished,  ✅ = Finished -->
 | Theme | Variants |
 |--|--|
