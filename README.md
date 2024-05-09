@@ -16,7 +16,7 @@ You can also suggest colors in [issues](https://github.com/xStormyy/bearded-them
 <!-- ☐ = Unfinished,  ✅ = Finished -->
 | Theme | Variants |
 |--|--|
-| Vivid | ✅ Dark<br>☐ Light<br>☐ Purple |
+| Vivid | ✅ Dark<br>✅ Light<br>☐ Purple |
 | Surprising | ☐ Blueberry<br>☐ Eggplant<br>☐ Watermelon |
 | Stained | ☐ Blue<br>☐ Purple |
 | Solarized | ☐ Dark<br>☐ Light<br>☐ Reversed |
